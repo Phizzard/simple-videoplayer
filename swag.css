@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eee;
+}
+
+.jumboTron {
+  background-color: mediumaquamarine;
+}
+
+.jumboTron h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 6rem 3.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.videoPlayerContainer {
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+.videoPlayer {
+  width: 100%;
+  height: 500px;
+  cursor: pointer;
+}
+
+.videoList {
+  flex-basis: 30%;
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.videoList .videoItem {
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.videoList .videoItem .videoItemImage {
+  width: 100%;
+}
+
+.videoList .videoItem .videoItemTitle {
+  margin: .2rem;
+}
+
+.videoTitle {
+  margin: .5rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+    flex-direction: row;
+  }
+
+  .videoList {
+    padding-left: 1rem;
+  }
+}
